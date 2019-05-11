@@ -1,7 +1,7 @@
-from bs4 import BeautifulSoup as bs
+import pandas as pd
+import requests
+from bs4 import BeautifulSoup
 from splinter import Browser
-import pandas as pd 
-import requests 
 
 def init_browser():
     executable_path = {"executable_path": "chromedriver.exe"}
@@ -162,4 +162,4 @@ def scrape_mars_hemispheres():
         return mars
     finally:
 
-browser.quit()
+        browser.quit()
